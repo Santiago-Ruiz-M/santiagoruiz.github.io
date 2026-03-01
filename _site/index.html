@@ -1,23 +1,20 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tu Nombre — CV & Repos</title>
-  <meta name="description" content="CV y repositorios destacados en GitHub." />
-  <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
-<body>
-  <div class="container">
+---
+layout: default
+title: "Santiago Ruiz — CV & Repos"
+---
+
+ 
+</style>
+<div class="container">
   <header class="topbar">
     <div>
-      <h1 class="title">Tu Nombre</h1>
+      <h1 class="title">Santiago Ruiz</h1>
       <div class="subtitle">Estudiante de Desarrollo de Aplicaciones Multiplataforma (1º DAM)</div>
     </div>
     <nav style="display:flex;gap:10px">
       <a class="btn" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-      <a class="btn" href="https://github.com/TUUSUARIO" target="_blank">GitHub</a>
-      <a class="btn" href="mailto:tuemail@ejemplo.com">Email</a>
+      <a class="btn" href="https://github.com/Santiago-Ruiz-M" target="_blank">GitHub</a>
+      <a class="btn" href="mailto:santiagoruiz5999@gmail.com">Email</a>
     </nav>
   </header>
 
@@ -25,10 +22,10 @@
     <h2>Sobre mí</h2>
     <div class="grid2">
       <div class="profile">
-        <img src="assets/img/perfil.jpg" alt="Foto de perfil">
+        <img src="assets/img/perfil.png" alt="Foto de perfil">
         <div class="bio">
           <p class="muted" style="margin:0">
-            Escribe aquí 3–4 líneas: qué estás aprendiendo, qué te gusta, en qué quieres mejorar.
+            Me encuentro estudiando Desarrollo de Aplicaciones Multiplataforma, cuyos lenguajes a destacar son Java en la mayor parte, html, javascript entre otros. Estoy interesado en trabajar y aportar de cara a proyectos de desarrollo para mejorar y ampliar mis conocimientos en el sector de la informática.
           </p>
           <div class="pillrow">
             <span class="pill">Java</span>
@@ -42,13 +39,14 @@
       <div>
         <h3 style="margin:0 0 10px">Experiencia / Proyectos de clase</h3>
         <ul class="muted" style="margin:0;padding-left:18px">
-          <li>Proyecto DAM: “App de Notas” (CRUD + BBDD)</li>
-          <li>Proyecto Java: “Gestor de tareas” (POO + tests)</li>
+          <li>Proyecto DAM: “Juego de ahorcado” (CRUD + BBDD)</li>
+          <li>Proyecto DAM: “Record Video GG: aplicación de mensajería” (CRUD + BBDD)</li>
+          <li>Proyecto Java: “Trivia game” (POO + tests)</li>
         </ul>
 
         <h3 style="margin:16px 0 10px">Objetivo</h3>
         <p class="muted" style="margin:0">
-          Ejemplo: “Busco prácticas y mejorar en backend con Java/Spring y bases de datos.”
+          Me encantaría participar en empresas de este mundo ya que me gustaría trabajar como funciona de cara a la realidad sobretodo a la hora de realizar proyectos y de crear aplicaciones.
         </p>
       </div>
     </div>
@@ -57,10 +55,23 @@
   <section class="section">
     <h2>Proyectos destacados (topic: <code>showcase</code>)</h2>
     <div id="featured" class="cards"></div>
-    <p class="muted" style="margin:10px 0 0">
-      Para que un repo salga aquí, añade el topic <b>showcase</b> en GitHub.
-    </p>
   </section>
+
+   <section class="section">
+    <h2>Record Video GG: aplicacion de mensajería</h2>
+    <div class="profile"> <img src="assets/img/Mensajería Pelipper.png" alt="Foto de perfil">
+      <div class="bio">
+        <p class="muted" style="margin:0"> Aplicación de proyecto de curso creado para el curso de DAM, donde en el cual tiene los siguientes parametros:
+          - Creación de usuario e inicio de sesión: En este apartado una vez iniciada la aplicación puede iniciar sesión si ya hay un usuario previo registrado y si no es el caso se le rederigirá a otra pantalla para crear un usuario con contraseña para que así la base de datos la almacene.
+        - Selección de idiomas: Tiene un botón en el cuál el usuario puede cambiar el idioma al que esté disponible y automaticamente se le cambiará al idioma seleccionado.
+      - Selección de envío: El objetivo es que el usuario seleccione el tipo de envío que desee realizar ya sea carta o paquete y una vez realizado se le creará un id unico en el cual puede insertar en la siguiente pantalla para verificar si el pedido se ha tramitado, esta en camino o ha llegado a su destino.</p>
+        <div class="pillrow"> <span class="pill">Javafx</span>  
+             <a href="https://github.com/Santiago-Ruiz-M/RecordVideoGG"
+            class="pill pill-link" target="_blank"> Ver proyecto </a> </div>
+      </div>
+    </div>
+  </section>
+
 
   <section class="section">
     <h2>Mis repositorios</h2>
@@ -81,9 +92,10 @@
     <div id="repos" class="cards"></div>
   </section>
 </div>
+ 
 
 <script>
-  const GITHUB_USERNAME = "TUUSUARIO"; // <- CAMBIA ESTO
+  const GITHUB_USERNAME = "Santiago-Ruiz-M"; // <- CAMBIA ESTO
   const FEATURED_TOPIC = "showcase";
   let allRepos = [];
   let activeTopic = "all";
@@ -206,6 +218,4 @@
     console.error(err);
   });
 </script>
-
-</body>
-</html>
+<link rel="stylesheet" href="/assets/css/styles.css">
